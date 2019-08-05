@@ -1,0 +1,382 @@
+a {
+  cursor: pointer;
+}
+
+.logo {
+  padding-top: 30px;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+}
+
+#name {
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  width: 88px;
+  margin: auto;
+}
+
+.navbar {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 37px;
+}
+
+.content-slider {
+  position: relative;
+  margin-top: -174px;
+  display: flex;
+  flex-direction: row;
+  width: 280vw;
+}
+
+.box1 {
+  background-color: whitesmoke;
+  width: 80vw;
+  padding-top: 270px;
+}
+
+.home-container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.home-project1 {
+  width: 75%;
+}
+
+.sbzpreview,
+.epapreview,
+.squekpreview {
+  width: 100%;
+}
+
+.home-container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.home-group1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+@media only screen and (max-width: 960px) {
+  .home-group1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home-project2 {
+  width: 45%;
+}
+
+@media only screen and (max-width: 960px) {
+  .home-project2 {
+    width: 100%;
+  }
+}
+
+.home-textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1460px) {
+  .home-textbox {
+    display: block;
+  }
+}
+
+.home-title {
+  font-size: 15px;
+  font-family: "Abel", sans-serif;
+}
+
+.home-p {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: lightslategray;
+}
+
+.box2 {
+  background-color: lightcoral;
+  width: 80vw;
+}
+
+.quotecontainer {
+  padding-top: 270px;
+  padding-left: 110px;
+  width: 580px;
+}
+
+@media only screen and (max-width: 1460px) {
+  .quotecontainer {
+    margin: auto;
+    text-align: center;
+    width: 530px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .quotecontainer {
+    text-align: center;
+    margin: auto;
+    padding-left: 0;
+    width: 442px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .quotecontainer {
+    width: 370px;
+  }
+}
+
+#quote {
+  font-size: 30px;
+  font-family: "Crimson Text", serif;
+}
+
+@media only screen and (max-width: 540px) {
+  #quote {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  .middlecontainer {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .middlecontainer {
+    margin-top: 45px;
+  }
+}
+
+#profilebox {
+  width: 45%;
+  margin: 4%;
+  margin-right: 0%;
+}
+
+@media only screen and (max-width: 960px) {
+  #profilebox {
+    width: 92%;
+    margin: 4%;
+  }
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+}
+
+.mc-group {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+  background-color: #fef8f5;
+  float: right;
+  margin-top: 110px;
+  margin-right: 110px;
+}
+
+@media only screen and (max-width: 960px) {
+  .mc-group {
+    display: block;
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  .mc-group {
+    float: none;
+    margin: auto;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 4%;
+}
+
+@media only screen and (max-width: 960px) {
+  .content {
+    width: 93%;
+  }
+}
+
+#paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 2.15;
+}
+
+.subtitle {
+  height: 27px;
+  transform: rotate(90deg);
+  margin-top: 87px;
+  margin-right: -80px;
+  margin-left: -60px;
+}
+
+@media only screen and (max-width: 960px) {
+  .subtitle {
+    margin-left: -77px;
+  }
+}
+
+#about_me {
+  font-family: "Abel", sans-serif;
+  width: 188px;
+  font-size: 15px;
+}
+
+/* .breakline {
+  margin-top: -155px;
+}
+
+#line1 {
+  display: flex;
+  height: 200px;
+  margin-left: 78%;
+  position: relative;
+}
+
+#line1-1 {
+  height: 100%;
+  border: 0.5px solid black;
+} */
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  margin-left: 106px;
+  position: relative;
+  top: 110px;
+}
+
+@media only screen and (max-width: 1460px) {
+  .cardcontainer {
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cardcontainer {
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .cardcontainer {
+    width: 75%;
+    margin-left: 98px;
+    top: 50px;
+  }
+}
+
+.card {
+  width: 30%;
+}
+
+.card-title {
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+}
+
+.card-text {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+}
+
+.box3 {
+  background-color: light;
+  width: 80vw;
+}
+
+.pad {
+  background-color: lightgray;
+  width: 10vw;
+}
+
+.workzoo {
+  display: none;
+}
+
+.sbz-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sbz-container1 {
+  width: 75%;
+}
+
+.project-overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+}
+
+.project-subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: lightslategray;
+  margin-bottom: 5px;
+}
+
+.display {
+  width: 50%;
+}
+
+.overview {
+  width: 50%;
+  line-height: 2;
+}
+
+.project-p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: black;
+}

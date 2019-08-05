@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/index.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+</head>
+
+<body>
+  <script>
+    function clickWork() {
+      document.getElementsByClassName("content-slider")[0].style.right = "0vw";
+      showWorkHome();
+    }
+
+    function clickAbout() {
+      document.getElementsByClassName("content-slider")[0].style.right = `80vw`;
+    }
+
+    function clickConnect() {
+      document.getElementsByClassName(
+        "content-slider"
+      )[0].style.right = `160vw`;
+    }
+
+    function showWorkZoo() {
+      document.getElementsByClassName("workhome")[0].style.display = "none";
+      document.getElementsByClassName("workzoo")[0].style.display = "block";
+    }
+
+    function showWorkHome() {
+      document.getElementsByClassName("workhome")[0].style.display = "block";
+      document.getElementsByClassName("workzoo")[0].style.display = "none";
+    }
+  </script>
+
+  <div class="header">
+    <div class="logo">
+      <h1 id="name">ASHLEY CHENG</h1>
+    </div>
+    <div class="navbar">
+      <a id="work" onclick="clickWork()">Work</a>
+      <a id="about" onclick="clickAbout()">About</a>
+      <a id="connect" onclick="clickConnect()">Connect</a>
+    </div>
+  </div>
+
+  <div class="content-slider">
+    <div class="pad"></div>
+    <div class="box1">
+      <div class="workhome">
+        <section class="home-container1">
+          <div class="home-project1">
+            <a onclick="showWorkZoo()">
+              <img class="sbzpreview" src="images/sbz preview.png" />
+            </a>
+            <div class="home-textbox">
+              <h2 class="home-title">SANTA BARBARA ZOO</h2>
+              <p class="home-p">Non-profit Website Redesign</p>
+            </div>
+          </div>
+        </section>
+        <section class="home-container2">
+          <div class="home-group1">
+            <div class="home-project2">
+              <a
+                href="https://www.behance.net/gallery/81721821/Responsive-Website-Redesign-Case-Study"
+              >
+                <img class="epapreview" src="images/epa preview 2.png" />
+              </a>
+              <div class="home-textbox">
+                <h2 class="home-title">ENVIRONMENTAL PROTECTION AGENCY</h2>
+                <p class="home-p">Government Website Redesign</p>
+              </div>
+            </div>
+            <div class="home-project2">
+              <img class="squekpreview" src="images/squek preview.png" />
+              <div class="home-textbox">
+                <h2 class="home-title">SQUEK</h2>
+                <p class="home-p">Mobile App Design</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="workzoo">
+        <div class="sbz-project">
+          <div class="sbz-container1">
+            <img class="sbzpreview" src="images/sbz preview.png" />
+            <div class="project-textbox">
+              <div class="display">
+                <h2 class="project-title">SANTA BARBARA ZOO</h2>
+                <p class="project-subtitle">Non-profit Website Redesign</p>
+                <p class="project-subtitle">July 2019</p>
+              </div>
+              <div class="overview">
+                <p class="project-p">
+                  The zoo is a happy place for everyone, especially for families
+                  with kids. The inspiration derived from wanting to better the
+                  local entertainment experience that we are so deeply connected
+                  with.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="quotecontainer">
+        <p id="quote">
+          Hey, I 'm Ashley - A UX/UI designer with a great passion for
+          user-centric design & keen execution strategy.
+        </p>
+      </div>
+      <div class="middlecontainer">
+        <div class="mc-group">
+          <div id="profilebox">
+            <img class="profile" src="images/profile.JPG" />
+          </div>
+          <div class="content">
+            <p id="paragraph">
+              Demonstrating strong Adobe design and product development skills
+              through fashion design degree at the Fashion Institute of Design
+              and Merchandising. Proven expertise in customer shopping
+              experiences and customer habits while working retail at Club
+              Monaco. Upon completion of UX/UI Boot Camp, I present strong skill
+              sets developing seamless web and mobile applications that resonate
+              with large users, built on user research, information
+              architecture, usability testing, user insight synthesis, and
+              interaction design.
+            </p>
+            <div class="subtitle">
+              <h4 id="about_me">SKILLS & EXPERIENCES</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="breakline">
+        <div id="line1">
+          <hr id="line1-1" />
+        </div>
+      </div> -->
+      <div class="cardcontainer">
+        <div class="card">
+          <video playsinline autoplay muted loop class="card-img-top">
+            <source src="images/taiwan.mov" />
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">BORN AND RAISED IN TAIWAN</h5>
+            <p class="card-text">
+              Yes, it’s Taiwan not Thailand. Born and raised on the mountainous
+              island, just across the Taiwan Strait with the East China Sea to
+              the north and the Philippine Sea to the east.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/me.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ENGLISH CAME BEFORE MANDARIN</h5>
+            <p class="card-text">
+              The first formal education I received was taught in English. In
+              short, I learned English alphabets before Chinese characters.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/puzzle.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">DISNEY PUZZLE COLLECTOR</h5>
+            <p class="card-text">
+              All Things Disney especially when it comes to puzzles. Currently
+              completed one 2000 piece puzzle and two 1000 piece puzzles!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box3"></div>
+
+    <div class="pad"></div>
+  </div>
+</body>
