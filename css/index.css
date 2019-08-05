@@ -43,7 +43,7 @@ a {
 }
 
 .box1 {
-  background-color: whitesmoke;
+  background-color: white;
   width: 80vw;
   padding-top: 270px;
 }
@@ -119,18 +119,18 @@ a {
 }
 
 .box2 {
-  background-color: lightcoral;
+  background-color: #fef8f5;
   width: 80vw;
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1100px) {
   .box2 {
-    height: 220vw;
+    height: 145vw;
   }
 }
 
 .quotecontainer {
-  padding-top: 270px;
+  padding-top: 258px;
   padding-left: 110px;
   width: 580px;
 }
@@ -159,7 +159,8 @@ a {
   }
 }
 
-#quote {
+#quote,
+#social-title {
   font-size: 30px;
   font-family: "Crimson Text", serif;
 }
@@ -170,14 +171,47 @@ a {
   }
 }
 
-@media only screen and (max-width: 1460px) {
+@media only screen and (max-width: 540px) {
   .middlecontainer {
-    margin-top: 110px;
+    margin-top: 45px;
+  }
+}
+
+.mc-group {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+  background-color: #fef8f5;
+  float: right;
+  margin-top: 50px;
+  margin-right: 110px;
+}
+
+@media only screen and (max-width: 1460px) {
+  .mc-group {
+    float: none;
+    margin: auto;
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .mc-group {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mc-group {
+    margin-top: 50px;
   }
 }
 
 @media only screen and (max-width: 960px) {
-  .middlecontainer {
+  .mc-group {
+    display: block;
+    padding-top: 1%;
     margin-top: 45px;
   }
 }
@@ -198,31 +232,6 @@ a {
 .profile {
   width: 100%;
   height: auto;
-}
-
-.mc-group {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  height: auto;
-  background-color: #fef8f5;
-  float: right;
-  margin-top: 110px;
-  margin-right: 110px;
-}
-
-@media only screen and (max-width: 960px) {
-  .mc-group {
-    display: block;
-    padding-top: 1%;
-  }
-}
-
-@media only screen and (max-width: 1460px) {
-  .mc-group {
-    float: none;
-    margin: auto;
-  }
 }
 
 .content {
@@ -264,7 +273,7 @@ a {
   font-size: 15px;
 }
 
-/* .breakline {
+.breakline {
   margin-top: -155px;
 }
 
@@ -278,7 +287,7 @@ a {
 #line1-1 {
   height: 100%;
   border: 0.5px solid black;
-} */
+}
 
 .cardcontainer {
   display: flex;
@@ -287,9 +296,9 @@ a {
   width: 70%;
   height: auto;
   text-align: center;
-  margin-left: 106px;
+  margin-left: 90px;
   position: relative;
-  top: 110px;
+  top: 70px;
 }
 
 @media only screen and (max-width: 1460px) {
@@ -302,20 +311,23 @@ a {
 @media only screen and (max-width: 1200px) {
   .cardcontainer {
     margin: auto;
-    width: 70%;
+    width: 74%;
+    top: 65px;
   }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1100px) {
   .cardcontainer {
-    display: block;
+    top: 50px;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .cardcontainer {
-    width: 75%;
-    margin-left: 98px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
     top: 50px;
   }
 }
@@ -331,6 +343,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .card {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
 .card-title {
   font-family: "Abel", sans-serif;
   font-size: 15px;
@@ -341,13 +360,83 @@ a {
   font-size: 13px;
 }
 
+.social {
+  margin-top: 258px;
+}
+
+#social-title {
+  margin-top: 160px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1460px) {
+  #social-title {
+    margin-top: 140px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #social-title {
+    margin-top: 125px;
+  }
+}
+
+#social-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 540px) {
+  #social-content {
+    flex-direction: column;
+  }
+}
+
+.emailbutton {
+  text-align: center;
+  margin-right: 23px;
+}
+
+@media only screen and (max-width: 540px) {
+  .emailbutton {
+    margin-right: 0;
+  }
+}
+
+.btn .btn-outline-primary {
+  color: black;
+  border-color: black;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  margin-left: 38px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 540px) {
+  .social-icons {
+    margin: auto;
+    padding-left: none;
+    margin-top: 35px;
+  }
+}
+
+.icon {
+  width: 40px;
+}
+
 .box3 {
-  background-color: light;
+  background-color: white;
   width: 80vw;
 }
 
 .pad {
-  background-color: lightgray;
+  background-color: #fef8f5;
   width: 10vw;
 }
 

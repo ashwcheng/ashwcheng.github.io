@@ -31,16 +31,21 @@
     function clickWork() {
       document.getElementsByClassName("content-slider")[0].style.right = "0vw";
       showWorkHome();
+      document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
+      document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
     }
 
     function clickAbout() {
       document.getElementsByClassName("content-slider")[0].style.right = `80vw`;
+      document.getElementsByClassName("box1")[0].style.backgroundColor = '#fef8f5';
+      document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
+      document.getElementsByClassName("box3")[0].style.backgroundColor = '#fef8f5';
     }
 
     function clickConnect() {
-      document.getElementsByClassName(
-        "content-slider"
-      )[0].style.right = `160vw`;
+      document.getElementsByClassName("content-slider")[0].style.right = `160vw`;
+      document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
+      document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
     }
 
     function showWorkZoo() {
@@ -135,28 +140,26 @@
             user-centric design & keen execution strategy.
           </p>
         </div>
-        <div class="middlecontainer">
-          <div class="mc-group">
-            <div id="profilebox">
-              <img class="profile" src="images/profile.JPG" />
+        <div class="mc-group">
+        <div id="profilebox">
+            <img class="profile" src="images/profile.JPG" />
+        </div>
+        <div class="content">
+            <p id="paragraph">
+            Demonstrating strong Adobe design and product development skills
+            through fashion design degree at the Fashion Institute of Design
+            and Merchandising. Proven expertise in customer shopping
+            experiences and customer habits while working retail at Club
+            Monaco. Upon completion of UX/UI Boot Camp, I present strong
+            skill sets developing seamless web and mobile applications that
+            resonate with large users, built on user research, information
+            architecture, usability testing, user insight synthesis, and
+            interaction design.
+            </p>
+            <div class="subtitle">
+            <h4 id="about_me">SKILLS & EXPERIENCES</h4>
             </div>
-            <div class="content">
-              <p id="paragraph">
-                Demonstrating strong Adobe design and product development skills
-                through fashion design degree at the Fashion Institute of Design
-                and Merchandising. Proven expertise in customer shopping
-                experiences and customer habits while working retail at Club
-                Monaco. Upon completion of UX/UI Boot Camp, I present strong
-                skill sets developing seamless web and mobile applications that
-                resonate with large users, built on user research, information
-                architecture, usability testing, user insight synthesis, and
-                interaction design.
-              </p>
-              <div class="subtitle">
-                <h4 id="about_me">SKILLS & EXPERIENCES</h4>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
         <!-- <div class="breakline">
                     <div id="line1">
@@ -199,8 +202,30 @@
           </div>
         </div>
       </div>
-      <div class="box3"></div>
-
+      <div class="box3">
+        <div class="social">
+                <p id="social-title">
+                    Let's Connect!
+                </p>
+                <div id="social-content">
+                    <a class="emailbutton" href= mailto:ashwencheng@gmaill.com>
+                        <button type="button" class="btn btn-outline-primary" >Email Me</button>
+                    </a>
+                    <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/acashleycheng">
+                                <img class="icon" src="images/linkedin.png">
+                            </a> 
+                            <a href="https://github.com/ashwcheng">
+                                <img class="icon" src="images/github-logo.png">
+                            </a>
+                            <a href="https://www.behance.net/yiwencheng1">
+                                <img class="icon" src="images/behance-logo-button.png">
+                            </a>
+                    </div>
+                </div>
+            </div>
+      </div>
+     
       <div class="pad"></div>
     </div>
 </body>
