@@ -34,6 +34,12 @@ a {
   padding-left: 37px;
 }
 
+@media only screen and (max-width: 500px) {
+  .navbar {
+    width: 325px;
+  }
+}
+
 .content-slider {
   position: relative;
   margin-top: -174px;
@@ -193,7 +199,13 @@ a {
 
 @media only screen and (max-width: 600px) {
   .quotecontainer {
-    width: 380px;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #quote {
+    width: 100%;
   }
 }
 
@@ -212,6 +224,13 @@ a {
 @media only screen and (max-width: 600px) {
   #quote {
    font-size: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #quote {
+   font-size: 19px;
   }
 }
 
@@ -242,6 +261,12 @@ a {
 @media only screen and (max-width: 768px) {
   .aboutcontainer {
     margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutcontainer {
+    margin-top: 18px;
   }
 }
 
@@ -286,6 +311,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  #profilebox {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .profile {
   width: 100%;
@@ -308,7 +339,14 @@ a {
 @media only screen and (max-width: 768px) {
   .content {
     width: 82%;
-    margin: 0 9% 9% 9%;
+    margin: 0 8% 8% 8%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 82%;
+    margin: 8%;
   }
 }
 
@@ -321,6 +359,13 @@ a {
 @media only screen and (max-width: 768px) {
   #paragraph {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #paragraph {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -337,6 +382,12 @@ a {
   font-family: "Abel", sans-serif;
   width: 188px;
   font-size: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  #about_me {
+    display: none;
+  }
 }
 
 .funcontainer {
@@ -435,6 +486,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .cardbox {
+    text-align: center;
+  }
+}
+
 .cardtitle {
   font-family: "Abel", sans-serif;
   font-size: 15px;
@@ -445,6 +502,13 @@ a {
   .cardtitle {
     width: 53%;
     text-align: start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cardtitle {
+    width: 100%;
+    text-align: center;
   }
 }
 
