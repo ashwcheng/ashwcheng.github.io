@@ -2,6 +2,8 @@
 
 <head>
   <link rel="stylesheet" href="css/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet" />
@@ -16,6 +18,8 @@
     function clickWork() {
       document.getElementsByClassName("content-slider")[0].style.right = "0vw";
       showWorkHome();
+      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '2000px';
+
       document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
       document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
     }
@@ -25,10 +29,14 @@
       document.getElementsByClassName("box1")[0].style.backgroundColor = '#fef8f5';
       document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
       document.getElementsByClassName("box3")[0].style.backgroundColor = '#fef8f5';
+
+      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '1600px';
+
     }
 
     function clickConnect() {
       document.getElementsByClassName("content-slider")[0].style.right = `160vw`;
+      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '835px';
       document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
       document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
     }
@@ -92,7 +100,6 @@
             </div>
           </section>
         </div>
-
         <div class="workzoo">
           <div class="sbz-project">
             <div class="sbz-container1">
@@ -113,22 +120,32 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="sbz-container2">
-            <div class="problemcontainer">
-            <h2>THE PROBLEM</h2>
-            <P class="problemtext">
-              We believe that users who arrive at the Santa Barbara Zoo’s 
-              website find themselves overwhelmed due to the clashing 
-              nature of the layout’s elements and lack of visual guidance. 
-            </P>
+            <div class="sbz-container2">
+              <div id="problem">
+                <h2 class="project-title">THE PROBLEM</h2>
+                <P class="project-p">
+                  We believe that users who arrive at the Santa Barbara Zoo’s
+                  website find themselves overwhelmed due to the clashing
+                  nature of the layout’s elements and lack of visual guidance.
+                </P>
+              </div>
+              <div id="zooimage">
+                <img id="zoo" src="images/Santa Barbara logo.png">
+              </div>
             </div>
-           <div class="solutioncontainer">
-           <h2>THE SOLUTION</h2>
-            <P class="solutiontext">
-            By re-designing the actionable user flow (CTA) and re-evaluating the content hierarchy, users can have a more guided, intuitive experience. 
-           </P>
-           </div> -->
+            <div class="sbz-container3">
+              <h2 class="project-title">DESIGN THINKING PROCESS</h2>
+              <img id="DTP" src="images/DTP.png">
+            </div>
+          </div>
+          <!-- <div class="solutioncontainer">
+            <h2 class="project-title">THE SOLUTION</h2>
+            <P class="project-p">
+              By re-designing the actionable user flow (CTA) and re-evaluating the content hierarchy, users can have
+              a
+              more guided, intuitive experience.
+            </P>
+          </div> -->
         </div>
       </div>
       <div class="box2">
@@ -138,64 +155,63 @@
             user-centric design & keen execution strategy.
           </p>
         </div>
-        <div class="mc-group">
-          <div id="profilebox">
-            <img class="profile" src="images/profile.JPG" />
-          </div>
-          <div class="content">
-            <p id="paragraph">
-              Demonstrating strong Adobe design and product development skills
-              through fashion design degree at the Fashion Institute of Design
-              and Merchandising. Proven expertise in customer shopping
-              experiences and customer habits while working retail at Club
-              Monaco. Upon completion of UX/UI Boot Camp, I present strong
-              skill sets developing seamless web and mobile applications that
-              resonate with large users, built on user research, information
-              architecture, usability testing, user insight synthesis, and
-              interaction design.
-            </p>
-            <div class="subtitle">
-              <h4 id="about_me">SKILLS & EXPERIENCES</h4>
+        <div class="aboutcontainer">
+          <div id="aboutbox">
+            <div id="profilebox">
+              <img class="profile" src="images/profile.JPG" />
+            </div>
+            <div class="content">
+              <p id="paragraph">
+                Demonstrating strong Adobe design and product development skills
+                through fashion design degree at the Fashion Institute of Design
+                and Merchandising. Proven expertise in customer shopping
+                experiences and customer habits while working retail at Club
+                Monaco. Upon completion of UX/UI Boot Camp, I present strong
+                skill sets developing seamless web and mobile applications that
+                resonate with large users, built on user research, information
+                architecture, usability testing, user insight synthesis, and
+                interaction design.
+              </p>
+              <div class="subtitle">
+                <h4 id="about_me">SKILLS & EXPERIENCES</h4>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <div class="breakline">
-                    <div id="line1">
-                      <hr id="line1-1" />
-                    </div>
-                  </div> -->
-        <div class="cardcontainer">
-          <div class="card">
-            <video playsinline autoplay muted loop class="card-img-top">
-              <source src="images/taiwan.mov" />
-            </video>
-            <div class="card-body">
-              <h5 class="card-title">BORN AND RAISED IN TAIWAN</h5>
-              <p class="card-text">
-                Yes, it’s Taiwan not Thailand. Born and raised on the
-                mountainous island, just across the Taiwan Strait with the East
-                China Sea to the north and the Philippine Sea to the east.
-              </p>
+        <div class="funcontainer">
+          <div class="funbit">
+            <div class="fun">
+              <video class="funmedia" playsinline autoplay muted loop>
+                <source src="images/taiwan.mov" />
+              </video>
+              <div class="cardbox">
+                <h5 class="cardtitle">BORN AND RAISED IN TAIWAN</h5>
+                <p class="cardtext">
+                  Yes, it’s Taiwan not Thailand. Born and raised on the
+                  mountainous island, just across the Taiwan Strait with the East
+                  China Sea to the north and the Philippine Sea to the east.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="images/me.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">ENGLISH CAME BEFORE MANDARIN</h5>
-              <p class="card-text">
-                The first formal education I received was taught in English. In
-                short, I learned English alphabets before Chinese characters.
-              </p>
+            <div class="fun">
+              <img class="funmedia" src="images/me.jpg" />
+              <div class="cardbox">
+                <h5 class="cardtitle">ENGLISH CAME BEFORE MANDARIN</h5>
+                <p class="cardtext">
+                  The first formal education I received was taught in English. In
+                  short, I learned English alphabets before Chinese characters.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="images/puzzle.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">DISNEY PUZZLE COLLECTOR</h5>
-              <p class="card-text">
-                All Things Disney especially when it comes to puzzles. Currently
-                completed one 2000 piece puzzle and two 1000 piece puzzles!
-              </p>
+            <div class="fun">
+              <img class="funmedia" src="images/puzzle.jpg" />
+              <div class="cardbox">
+                <h5 class="cardtitle">DISNEY PUZZLE COLLECTOR</h5>
+                <p class="cardtext">
+                  All Things Disney especially when it comes to puzzles. Currently
+                  completed one 2000 piece puzzle and two 1000 piece puzzles!
+                </p>
+              </div>
             </div>
           </div>
         </div>
