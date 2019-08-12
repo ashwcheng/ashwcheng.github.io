@@ -7,55 +7,21 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <script>
-    function clickWork() {
-      document.getElementsByClassName("content-slider")[0].style.right = "0vw";
-      showWorkHome();
-      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '2000px';
-
-      document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
-      document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
-    }
-
-    function clickAbout() {
-      document.getElementsByClassName("content-slider")[0].style.right = `80vw`;
-      document.getElementsByClassName("box1")[0].style.backgroundColor = '#fef8f5';
-      document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
-      document.getElementsByClassName("box3")[0].style.backgroundColor = '#fef8f5';
-
-      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '1600px';
-
-    }
-
-    function clickConnect() {
-      document.getElementsByClassName("content-slider")[0].style.right = `160vw`;
-      // document.getElementsByClassName("content-slider")[0].style.maxHeight = '835px';
-      document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
-      document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
-    }
-
-    function showWorkZoo() {
-      document.getElementsByClassName("workhome")[0].style.display = "none";
-      document.getElementsByClassName("workzoo")[0].style.display = "block";
-    }
-
-    function showWorkHome() {
-      document.getElementsByClassName("workhome")[0].style.display = "block";
-      document.getElementsByClassName("workzoo")[0].style.display = "none";
-    }
-  </script>
 
   <div class="window">
     <div class="header">
+      <a id="logo" href="https://ashwcheng.github.io"></a>
       <div class="logo">
         <h1 id="name">ASHLEY CHENG</h1>
       </div>
+      </a>
       <div class="navbar">
         <a id="work" onclick="clickWork()">Work</a>
         <a id="about" onclick="clickAbout()">About</a>
@@ -67,9 +33,9 @@
       <div class="pad"></div>
       <div class="box1">
         <div class="workhome">
-          <section class="home-container1">
+          <section class="home-container1 fadein">
             <div class="home-project1">
-              <a onclick="showWorkZoo()">
+              <a id="transition" onclick="showWorkZoo()">
                 <img class="sbzpreview" src="images/sbz preview.png" />
               </a>
               <div class="home-textbox">
@@ -78,10 +44,11 @@
               </div>
             </div>
           </section>
-          <section class="home-container2">
+          <section class="home-container2 fadein">
             <div class="home-group1">
               <div class="home-project2">
-                <a href="https://www.behance.net/gallery/81721821/Responsive-Website-Redesign-Case-Study">
+                <a id="transition"
+                  href="https://www.behance.net/gallery/81721821/Responsive-Website-Redesign-Case-Study">
                   <img class="epapreview" src="images/epa preview 2.png" />
                 </a>
                 <div class="home-textbox">
@@ -90,7 +57,8 @@
                 </div>
               </div>
               <div class="home-project2">
-                <img class="squekpreview" src="images/squek preview.png" />
+                <a id="transition"> <img class="squekpreview" src="images/squek preview.png" /></a>
+
                 <div class="home-textbox">
                   <h2 class="home-title">SQUEK</h2>
                   <p class="home-p">Mobile App Design</p>
@@ -101,7 +69,7 @@
         </div>
         <div class="workzoo">
           <div class="sbz-project">
-            <div class="sbz-container1">
+            <div class="sbz-container1 fadein">
               <img class="sbzpreview" src="images/sbz preview.png" />
               <div class="project-textbox">
                 <div class="display">
@@ -119,7 +87,30 @@
                 </div>
               </div>
             </div>
-            <div class="sbz-container2">
+            <div class="sbz-container2 fadein">
+              <div id="role">
+                <h2 class="project-title">ROLE</h2>
+                <P class="project-p">
+                  UXUI Researcher
+                </P>
+                <P class="project-p">
+                  UXUI Designer
+                </P>
+              </div>
+              <div id="contributor">
+                <h2 class="project-title">CONTRIBUTOR</h2>
+                <P class="project-p">
+                  Arish Dubash
+                </P>
+              </div>
+              <div id="timeframe">
+                <h2 class="project-title">TIMEFRAME</h2>
+                <P class="project-p">
+                  1 Month
+                </P>
+              </div>
+            </div>
+            <div class="sbz-container3 fadein">
               <div id="problem">
                 <h2 class="project-title">THE PROBLEM</h2>
                 <P class="project-p">
@@ -132,19 +123,59 @@
                 <img id="zoo" src="images/Santa Barbara logo.png">
               </div>
             </div>
-            <div class="sbz-container3">
+            <div class="sbz-container4 fadein">
               <h2 class="project-title">DESIGN THINKING PROCESS</h2>
               <img id="DTP" src="images/DTP.png">
             </div>
+            <div class="sbz-container5 fadein">
+              <h2 class="project-title">RESEARCH</h2>
+              <div id="RPimage">
+                <img id="RP" src="images/researh process.png">
+              </div>
+              <div class="project-d">
+                <p class="project-p">Online Surveys, User Interviews, and Competitor Analysis were conducted to find out
+                  the fundamental: WHO, WHAT, & HOW</p>
+              </div>
+            </div>
+            <div class="sbz-container6 fadein">
+              <h2 class="project-title">MAJOR TAKEAWAYS</h2>
+              <div class="chartcontainer">
+                <div class="chart">
+                  <h2 class="project-title">Motivation</h2>
+                  <ol class="project-p">
+                    <li>Enjoyment</li>
+                    <li>Education Opportunity</li>
+                    <li>Events</li>
+                  </ol>
+                </div>
+                <div class="chart">
+                  <h2 class="project-title">Priorities</h2>
+                  <ol class="project-p">
+                    <li>Hour of Opperation</li>
+                    <li>Ticket Purchases & Prices</li>
+                    <li>Types of Animals & Attractions</li>
+                    <li>Special Events</li>
+                  </ol>
+                </div>
+                <div class="chart">
+                  <h2 class="project-title"> Current Website</h2>
+                  <ol class="project-p">
+                    <li>Color Confuse Hierarchy</li>
+                    <li>Equal weighted CTAs</li>
+                    <li>Tile </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- <div class="solutioncontainer">
-            <h2 class="project-title">THE SOLUTION</h2>
-            <P class="project-p">
-              By re-designing the actionable user flow (CTA) and re-evaluating the content hierarchy, users can have
-              a
-              more guided, intuitive experience.
+                      <h2 class="project-title">THE SOLUTION</h2>
+                      <P class="project-p">
+                        By re-designing the actionable user flow (CTA) and re-evaluating the content hierarchy, users can have
+                        a
+                        more guided, intuitive experience.
             </P>
-          </div> -->
+                    </div> -->
         </div>
       </div>
       <div class="box2">
@@ -154,7 +185,7 @@
             user-centric design & keen execution strategy.
           </p>
         </div>
-        <div class="aboutcontainer">
+        <div class="aboutcontainer fadein">
           <div id="aboutbox">
             <div id="profilebox">
               <img class="profile" src="images/profile.JPG" />
@@ -177,7 +208,7 @@
             </div>
           </div>
         </div>
-        <div class="funcontainer">
+        <div class="funcontainer fadein">
           <div class="funbit">
             <div class="fun">
               <video class="funmedia" playsinline autoplay muted loop>
@@ -221,7 +252,7 @@
             Let's Connect!
           </p>
           <div id="social-content">
-            <a class="emailbutton" href=mailto:ashwencheng@gmaill.com>
+            <a class="emailbutton" href=mailto: ashwencheng@gmaill.com>
               <button type="button" class="btn btn-outline-primary">Email Me</button>
             </a>
             <div class="social-icons">
@@ -241,8 +272,10 @@
 
       <div class="pad"></div>
     </div>
+    <!-- jquery / javascript -->
+    <script async src="index.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145413683-1"></script>
+    <script async src=" https://www.googletagmanager.com/gtag/js?id=UA-145413683-1"> </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
