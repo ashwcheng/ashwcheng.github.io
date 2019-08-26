@@ -1,32 +1,76 @@
+
+
 function clickWork() {
     document.getElementsByClassName("content-slider")[0].style.right = "0vw";
     showWorkHome();
     document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
+    document.getElementById("work").style.color = 'black';
+    document.getElementById("about").style.color = 'lightgray';
+    document.getElementById("connect").style.color = 'lightgray';
+}
+
+function clickArrow() {
+    document.getElementsByClassName("header")[0].style.display = "block";
+    document.getElementsByClassName("workhome")[0].style.display = "block";
+    document.getElementsByClassName("returnwork")[0].style.display = "none";
 }
 
 function showWorkZoo() {
     document.getElementsByClassName("workhome")[0].style.display = "none";
     document.getElementsByClassName("workzoo")[0].style.display = "block";
+    document.getElementsByClassName("header")[0].style.display = "none";
+    document.getElementsByClassName("returnwork")[0].style.display = "block";
 }
 
 function showWorkHome() {
     document.getElementsByClassName("workhome")[0].style.display = "block";
     document.getElementsByClassName("workzoo")[0].style.display = "none";
+    document.getElementsByClassName("returnwork")[0].style.display = "none";
 }
 
 function clickAbout() {
-    document.getElementsByClassName("content-slider")[0].style.right = `80vw`;
+    document.getElementsByClassName("content-slider")[0].style.right = `90vw`;
     document.getElementsByClassName("box1")[0].style.backgroundColor = '#fef8f5';
     document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box3")[0].style.backgroundColor = '#fef8f5';
+    document.getElementById("about").style.color = 'black';
+    document.getElementById("work").style.color = 'lightgray';
+    document.getElementById("connect").style.color = 'lightgray';
 }
 
 function clickConnect() {
-    document.getElementsByClassName("content-slider")[0].style.right = `160vw`;
+    document.getElementsByClassName("content-slider")[0].style.right = `180vw`;
     document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
+    document.getElementById("about").style.color = 'lightgray';
+    document.getElementById("work").style.color = 'lightgray';
+    document.getElementById("connect").style.color = 'black';
 }
+
+$(document).ready(function () {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        $('.fadein').each(function (i) {
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({ 'opacity': '1' }, 00);
+
+            }
+
+        });
+
+    });
+
+});
 
 $(document).ready(function () {
     $("#work").click(function () {
@@ -36,15 +80,18 @@ $(document).ready(function () {
     });
 
     $(".sbzpreview").click(function () {
-        $(".sbz-container1").css("display", "none");
-        $(".sbz-container2").css("display", "none");
-        $(".sbz-container3").css("display", "none");
-        $(".sbz-container4").css("display", "none");
-        $(".sbz-container5").css("display", "none");
-        $(".sbz-container6").css("display", "none");
-        $(".sbz-container7").css("display", "none");
-        $(".sbz-container8").css("display", "none");
-        $(".sbz-container1").fadeIn(2000);
+        $(".sbz1").css("display", "none");
+        $(".sbz2").css("display", "none");
+        $(".sbz3").css("display", "none");
+        $(".sbz4").css("display", "none");
+        $(".sbz5").css("display", "none");
+        $(".sbz6").css("display", "none");
+        $(".sbz7").css("display", "none");
+        $(".sbz8").css("display", "none");
+        $(".sbz9").css("display", "none");
+        $(".sbz10").css("display", "none");
+        $(".sbz11").css("display", "none");
+        $(".sbz1").fadeIn(2000);
     });
 
     $("#about").click(function () {
@@ -84,6 +131,7 @@ $(document).ready(function () {
     $(".home-container2").css("display", "none");
     $(".home-container1").fadeIn(2000);
 });
+
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
