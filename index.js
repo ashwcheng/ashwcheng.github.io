@@ -14,6 +14,7 @@ function clickArrow() {
     document.getElementsByClassName("header")[0].style.display = "block";
     document.getElementsByClassName("workhome")[0].style.display = "block";
     document.getElementsByClassName("returnwork")[0].style.display = "none";
+    document.getElementsByClassName("workzoo")[0].style.display = "none";
 }
 
 function showWorkZoo() {
