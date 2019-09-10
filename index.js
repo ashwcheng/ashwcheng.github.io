@@ -136,6 +136,7 @@ $(document).ready(function () {
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
+    document.getElementsByClassName("returnwork")[0].style.display = "none";
 }
 
 function closeModal() {
@@ -167,6 +168,12 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].className += "active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+$(document).ready(function () {
+    $("window").click(function () {
+        $("div").animate({ up: '250px' });
+    });
+});
