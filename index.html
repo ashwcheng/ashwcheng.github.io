@@ -39,8 +39,8 @@
     <div class="content-slider">
       <div class="pad"></div>
       <div class="box1">
-        <!-- return arrow -->
 
+        <!-- return arrow -->
         <button class="returnwork flexrow" onclick="clickArrow()">Return to Work &#8592
         </button>
 
@@ -97,21 +97,24 @@
                 <h2 class="project-header">Santa Barbara Zoo <br> Nonprofit Website Redesign</h2>
                 <p class=" timeframe p-subtitle">July 2019</p>
               </div>
-              <div class="detail flexcolumn">
-                <div class="flexrow" style="width: 92%;justify-content: space-between">
+
+              <div class="detail flexrow">
+                <div class="detail1">
                   <h2 class="p-subtitle">Role</h2>
-                  <h2 class="p-subtitle">Partner</h2>
-                </div>
-                <div class="flexrow" style="justify-content: space-between">
                   <h2 class="p-subtitle-g">UX Researcher & Designer</h2>
+                </div>
+                <div class="detail2">
+                  <h2 class="p-subtitle">Partner</h2>
                   <h2 class="p-subtitle-g">Arish Dubash</h2>
                 </div>
               </div>
+
+
               <img class="preview" src="images/sbz-img.png" />
             </div>
             <!-- Overview -->
-            <div class="overview section-title container85 flexrow">
-              <h2 class="project-title">Overview</h2>
+            <div class="overview container85 flexcolumn ">
+              <h2 class="project-title info-right">Overview</h2>
               <p class=" description project-p info-right">
                 The zoo is a happy place for everyone, especially for families with kids. The inspiration of this
                 project derived from wanting to better the local entertainment experience that we are so deeply
@@ -123,10 +126,9 @@
               </p>
             </div>
             <!-- currentsite -->
-            <div class="currentsite container100 flexrow fadein">
-              <div class="flexcolumn" style="width: 60%">
-                <a href="https://www.sbzoo.org/">
-                  <video id="sbzwebsite" playsinline autoplay muted loop>
+            <div class="currentsite flexrow fadein">
+              <div class="flexcolumn">
+                <a href=" https://www.sbzoo.org/"> <video id="sbzwebsite" playsinline autoplay muted loop>
                     <source src="images/sbz current site.mov">
                     </source>
                   </video>
@@ -136,15 +138,17 @@
             </div>
 
             <!-- goal -->
-            <div class="goal section-title container85 flexrow">
-              <h2 class="project-title">Our Goal</h2>
-              <p class=" description project-p info-right">
-                Through detailed evaluation and analysis of the current website, we believe that users find themselves
-                overwhelmed due to the clashing nature of the layout’s elements and lack of visual guidance.
-                The goal is to <u>re-evaluate</u> and <u>re-design
-                </u> the current Santa Barbara Zoo website to help generate traffic to the site and encourage ticket
-                purchases and donation.
-              </p>
+            <div class="goal container100 flexcolumn">
+              <div class="container85 section-title flexrow">
+                <h2 class="project-title">Our Goal</h2>
+                <p class=" description project-p info-right">
+                  Through detailed evaluation and analysis of the current website, we believe that users find themselves
+                  overwhelmed due to the clashing nature of the layout's elements and lack of visual guidance.
+                  The goal is to <u>re-evaluate</u> and <u>re-design
+                  </u> the current Santa Barbara Zoo website to help generate traffic to the site and encourage ticket
+                  purchases and donation.
+                </p>
+              </div>
             </div>
 
             <!-- user research & insights -->
@@ -164,67 +168,84 @@
             <!-- takeaways -->
             <div class="takeaways container100 flexcolumn fadein">
               <div class="chartcontainer container85 flexrow">
-                <div class="chart">
-                  <h2 class="project-p"><b>Motivation</b></h2>
-                  <ol class="project-p">
-                    <li>Enjoyment</li>
-                    <li>Education Opportunity</li>
-                    <li>Events</li>
-                  </ol>
+                <div id="circle">
+                  <div class="chart">
+                    <h2 class="display-title">01</h2>
+                    <h2 class="project-title">Motivation</h2>
+                    <ul class="project-p">
+                      <li>Enjoyment</li>
+                      <li>Education Opportunity</li>
+                      <li>Events</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="chart">
-                  <h2 class="project-p"><b>Priorities</b></h2>
-                  <ol class="project-p">
-                    <li>Hour of Opperation</li>
-                    <li>Ticket Purchases & Prices</li>
-                    <li>Types of Animals & Attractions</li>
-                    <li>Special Events</li>
-                  </ol>
+                <div id="circle">
+                  <div class="chart">
+                    <h2 class="display-title">02</h2>
+                    <h2 class="project-title">Priorities</h2>
+                    <ul class="project-p">
+                      <li>Hour of Operation</li>
+                      <li>Ticket Purchases & Prices</li>
+                      <li>Types of Animals & Attractions</li>
+                      <li>Special Events</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="chart">
-                  <h2 class="project-p"><b>Current Website</b></h2>
-                  <ol class="project-p">
-                    <li>Color Confuse Hierarchy</li>
-                    <li>Equal Weighted CTAs</li>
-                    <li>Tile Design Overused</li>
-                  </ol>
+                <div id="circle">
+                  <div class="chart">
+                    <h2 class="display-title">03</h2>
+                    <h2 class="project-title"><b></b>Current Website</h2>
+                    <ul class="project-p">
+                      <li>Color Confuse Hierarchy</li>
+                      <li>Equal Weighted CTAs</li>
+                      <li>Tile Design Overused</li>
+                    </ul>
+                  </div>
                 </div>
+
               </div>
             </div>
 
             <!-- approach -->
-            <div class="approach section-title container85 flexrow">
-              <h2 class="project-title">Our Approach</h2>
-              <p class=" description project-p info-right">
-                With distinguished pain points and unique takeaways, the team decided to simplify the two main
-                actionable
-                user flow - buy tickets & donate - and re-evaluate the content hierarchy on their landing page to
-                provide
-                users a more guided, intuitive experience.
-              </p>
+            <div class="approach container100 flexcolumn">
+              <div class="approachtext section-title container85 flexrow">
+                <h2 class="project-title">Our Approach</h2>
+                <p class=" description project-p info-right">
+                  With distinguished pain points and unique takeaways, the team decided to simplify the two main
+                  actionable
+                  user flow - buy tickets & donate - and re-evaluate the content hierarchy on their landing page to
+                  provide
+                  users a more guided, intuitive experience.
+                </p>
+              </div>
             </div>
+
 
             <!-- user persona -->
             <div class="persona container100 flexcolumn">
               <div class=" personabox container85 flexrow fadein">
-                <div class="left flexcolumn">
-                  <h2 class="project-title" style="margin-bottom: 200px;">User Persona</h2>
-                  <div class="Column">
-                    <img src="images/8. USER PERSONA - SUZANNE KIRK.png" style="width:100%"
-                      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+
+                <div class="Column">
+                  <img src="images/8. USER PERSONA - SUZANNE KIRK.png" style="width:100%"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+
+                <div class="center">
+                  <div class="c-text">
+                    <h2 class="project-title">Our Users</h2>
+                    <p class="project-p" style="margin-top: 20px">Two user personas were created to represent Santa
+                      Barbara Zoo’s targeting groups
+                      - young adults & families. The two users guided us through the whole design thinking process as we
+                      brainstorm ideas and make revisions.</p>
                   </div>
                 </div>
-                <div class="right flexcolumn">
-                  <div class="Column">
-                    <img src="images/8. USER PERSONA - BRYAN TAN.png" style="width:100%"
-                      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                  </div>
-                  <p class="project-p" style="width: 570px;
-                  margin-top: 100px">Two user personas were created to represent Santa
-                    Barbara Zoo’s targeting groups
-                    - young adults & families. The two users guided us through the whole design thinking process as we
-                    brainstorm ideas and make revisions.</p>
+
+                <div class="Column">
+                  <img src="images/8. USER PERSONA - BRYAN TAN.png" style="width:100%"
+                    onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                 </div>
+
                 <div id="myModal" class="Modal">
                   <span class="Close cursor" onclick="closeModal()">&times;</span>
                   <div class="modal-content">
@@ -274,13 +295,29 @@
               </div>
             </div>
 
-            <!-- desktop wireframe -->
-            <div class="outer">
-              <div class="inner" style="border-radius: 20px">
-                <iframe src="https://giphy.com/embed/hWAKU8ZW0Nn4zsvwVD" width="222" height="480" frameBorder="0"
-                  class="giphy-embed" allowFullScreen></iframe>
-                <p><a href="https://giphy.com/gifs/hWAKU8ZW0Nn4zsvwVD"></a></p>
+            <!-- website prototype -->
+            <div class="flexrow container85 ">
+              <img class="prototype" src="images/w-prototype.jpg">
+              <div class="w-text flexcolumn">
+                <h2 class="project-title"> Responsive Website</h2>
+                <p> Visit link to view our approach on the Santa Barbara Zoo website redesign. </p>
+                <button class="w-button" onclick="clickArrow()">Visit Website
+                </button>
               </div>
+
+            </div>
+
+            <!-- mobile prototype -->
+            <div class="flexrow container85 ">
+              <div class="m-text flexcolumn">
+                <h2 class="project-title"> Mobile Version</h2>
+                <p> Here is the redesign of the Santa Barbara Zoo Website. Here is the redesign of the Santa Barbara Zoo
+                  Website.Here is the redesign of the Santa Barbara Zoo Website.Here is the redesign of the Santa
+                  Barbara Zoo Website. </p>
+                <button class="m-button" onclick="clickArrow()">View on Mobile
+                </button>
+              </div>
+              <img class="prototype" src="images/m-prototype.png">
             </div>
 
 
@@ -304,7 +341,7 @@
                   <a id="transition"> <img class="preview" src="images/squek preview.png" /></a>
                   <div class="np-textbox">
                     <div class="display">
-                      <h2 class="np-title">SQUEK</h2>
+                      <h2 class="np-title">Squek</h2>
                       <p class="np-subtitle">Mobile App Design</p>
                     </div>
                   </div>
