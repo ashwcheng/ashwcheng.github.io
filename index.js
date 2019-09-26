@@ -80,21 +80,6 @@ $(document).ready(function () {
         $(".home-container1").fadeIn(2000);
     });
 
-    $(".sbzpreview").click(function () {
-        $(".sbz1").css("display", "none");
-        $(".sbz2").css("display", "none");
-        $(".sbz3").css("display", "none");
-        $(".sbz4").css("display", "none");
-        $(".sbz5").css("display", "none");
-        $(".sbz6").css("display", "none");
-        $(".sbz7").css("display", "none");
-        $(".sbz8").css("display", "none");
-        $(".sbz9").css("display", "none");
-        $(".sbz10").css("display", "none");
-        $(".sbz11").css("display", "none");
-        $(".sbz1").fadeIn(2000);
-    });
-
     $("#about").click(function () {
         // console.log("show fade in")
         $(".quotecontainer").css("display", "none");
@@ -133,6 +118,32 @@ $(document).ready(function () {
     $(".home-container1").fadeIn(2000);
 });
 
+// case study fade in on scroll
+
+$(function () {  // $(document).ready shorthand
+    $('.show').fadeIn('slow');
+});
+
+$(document).ready(function () {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        $('.hideme').each(function (i) {
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (bottom_of_window > bottom_of_object) {
+                $(this).animate({ 'opacity': '1' }, 1000);
+            }
+        });
+    });
+});
+
+// persona modal
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";

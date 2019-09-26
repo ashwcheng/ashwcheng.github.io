@@ -633,7 +633,7 @@ width:34%;
   width: 145px;
 }
   
-.w-button:hover, .m-button:hover {
+.w-button:hover, .m-button:hover, .s-button:hover {
     background-color: #2B415A;
     color: white;
 }
@@ -1081,9 +1081,7 @@ margin-top:125px;
 }
 
 #social-content{
-display:flex;
-flex-direction:row;
-justify-content:center;
+align-self:center;
 margin-top:40px;
 }
 
@@ -1093,27 +1091,10 @@ flex-direction:column;
 }
 }
 
-.emailbutton{
-text-align:center;
-margin-right:23px;
-}
-
-@media only screen and (max-width:768px){
-.emailbutton{
-margin-right:0;
-}
-}
-
-.btn.btn-outline-primary{
-color:black;
-border-color:black;
-}
-
 .social-icons{
 display:flex;
 flex-direction:row;
 width:240px;
-margin-left:38px;
 justify-content:space-between;
 }
 
@@ -1121,7 +1102,6 @@ justify-content:space-between;
 .social-icons{
 margin:auto;
 padding-left:none;
-margin-top:35px;
 }
 }
 
@@ -1130,6 +1110,14 @@ width:40px;
 }
 
 /*box3*/
+
+.s-button {
+  color: 255,255,255,0.6;
+  border: 1px solid #2B415A;
+  padding: 5px 15px 5px 15px;
+  width: 145px;
+}
+  
 
 .box3{
 background-color:white;
@@ -1141,3 +1129,6 @@ background-color:#fef8f5;
 width:5vw;
 }
 
+.hideme {
+  opacity: 0;
+}
