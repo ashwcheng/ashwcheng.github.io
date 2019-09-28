@@ -4,7 +4,7 @@ function clickWork() {
     document.getElementsByClassName("content-slider")[0].style.right = "0vw";
     showWorkHome();
     document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
-    document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
+    document.getElementsByClassName("box2")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("work").style.color = 'black';
     document.getElementById("about").style.color = 'lightgray';
     document.getElementById("connect").style.color = 'lightgray';
@@ -32,9 +32,9 @@ function showWorkHome() {
 
 function clickAbout() {
     document.getElementsByClassName("content-slider")[0].style.right = `90vw`;
-    document.getElementsByClassName("box1")[0].style.backgroundColor = '#fef8f5';
+    document.getElementsByClassName("box1")[0].style.backgroundColor = '#F7F7F7';
     document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
-    document.getElementsByClassName("box3")[0].style.backgroundColor = '#fef8f5';
+    document.getElementsByClassName("box3")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("about").style.color = 'black';
     document.getElementById("work").style.color = 'lightgray';
     document.getElementById("connect").style.color = 'lightgray';
@@ -43,7 +43,7 @@ function clickAbout() {
 function clickConnect() {
     document.getElementsByClassName("content-slider")[0].style.right = `180vw`;
     document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
-    document.getElementsByClassName("box2")[0].style.backgroundColor = '#fef8f5';
+    document.getElementsByClassName("box2")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("about").style.color = 'lightgray';
     document.getElementById("work").style.color = 'lightgray';
     document.getElementById("connect").style.color = 'black';
@@ -132,11 +132,11 @@ $(document).ready(function () {
         /* Check the location of each desired element */
         $('.hideme').each(function (i) {
 
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var top_of_object = $(this).position().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade it in */
-            if (bottom_of_window > bottom_of_object) {
+            if (bottom_of_window > top_of_object) {
                 $(this).animate({ 'opacity': '1' }, 1000);
             }
         });
