@@ -2,32 +2,11 @@
 
 function clickWork() {
     document.getElementsByClassName("content-slider")[0].style.right = "0vw";
-    showWorkHome();
     document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box2")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("work").style.color = 'black';
     document.getElementById("about").style.color = 'lightgray';
     document.getElementById("connect").style.color = 'lightgray';
-}
-
-function clickArrow() {
-    document.getElementsByClassName("header")[0].style.display = "block";
-    document.getElementsByClassName("workhome")[0].style.display = "block";
-    document.getElementsByClassName("returnwork")[0].style.display = "none";
-    document.getElementsByClassName("workzoo")[0].style.display = "none";
-}
-
-function showWorkZoo() {
-    document.getElementsByClassName("workhome")[0].style.display = "none";
-    document.getElementsByClassName("workzoo")[0].style.display = "block";
-    document.getElementsByClassName("header")[0].style.display = "none";
-    document.getElementsByClassName("returnwork")[0].style.display = "block";
-}
-
-function showWorkHome() {
-    document.getElementsByClassName("workhome")[0].style.display = "block";
-    document.getElementsByClassName("workzoo")[0].style.display = "none";
-    document.getElementsByClassName("returnwork")[0].style.display = "none";
 }
 
 function clickAbout() {
@@ -49,74 +28,47 @@ function clickConnect() {
     document.getElementById("connect").style.color = 'black';
 }
 
-$(document).ready(function () {
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll(function () {
+// $(document).ready(function () {
+//     $("#work").click(function () {
+//         $(".whcontainer1").css("display", "none");
+//         $(".whcontainer2").css("display", "none");
+//         $(".whcontainer1").fadeIn(1500);
+//     });
 
-        /* Check the location of each desired element */
-        $('.fadein').each(function (i) {
+//     $("#about").click(function () {
+//         // console.log("show fade in")
+//         $(".quotecontainer").css("display", "none");
+//         $(".aboutcontainer").css("display", "none");
+//         $(".funcontainer").css("display", "none");
+//         $(".quotecontainer").fadeIn(1500);
+//     });
 
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+//     $("#connect").click(function () {
+//         // console.log("show fade in")
+//         $(".social").css("display", "none");
+//         $(".social").fadeIn(1500);
+//     });
 
-            /* If the object is completely visible in the window, fade it it */
-            if (bottom_of_window > bottom_of_object) {
+//     $.fn.isInViewport = function () {
+//         var elementTop = $(this).offset().top;
+//         var elementBottom = elementTop + $(this).outerHeight();
 
-                $(this).animate({ 'opacity': '1' }, 00);
+//         var viewportTop = $(window).scrollTop();
+//         var viewportBottom = viewportTop + $(window).height();
 
-            }
+//         return elementBottom > viewportTop && elementTop < viewportBottom;
+//     };
 
-        });
+//     $(window).scroll(function () {
+//         $('.fadein').each(function () {
+//             if ($(this).isInViewport()) {
+//                 $(this).fadeIn(1000);
+//             }
+//         });
+//     });
+// });
 
-    });
-
-});
-
-$(document).ready(function () {
-    $("#work").click(function () {
-        $(".home-container1").css("display", "none");
-        $(".home-container2").css("display", "none");
-        $(".home-container1").fadeIn(2000);
-    });
-
-    $("#about").click(function () {
-        // console.log("show fade in")
-        $(".quotecontainer").css("display", "none");
-        $(".aboutcontainer").css("display", "none");
-        $(".funcontainer").css("display", "none");
-        $(".quotecontainer").fadeIn(2000);
-
-    });
-
-    $("#connect").click(function () {
-        // console.log("show fade in")
-        $(".social").css("display", "none");
-        $(".social").fadeIn(2000);
-    });
-
-    $.fn.isInViewport = function () {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    $(window).scroll(function () {
-        $('.fadein').each(function () {
-            if ($(this).isInViewport()) {
-                $(this).fadeIn(2000);
-            }
-        });
-    });
-
-    $(".home-container1").css("display", "none");
-    $(".home-container2").css("display", "none");
-    $(".home-container1").fadeIn(2000);
-});
 
 // case study fade in on scroll
 
@@ -143,7 +95,8 @@ $(document).ready(function () {
     });
 });
 
-// persona modal
+
+// lightbox
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
