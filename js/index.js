@@ -1,7 +1,6 @@
-
-
 function clickWork() {
     document.getElementsByClassName("content-slider")[0].style.right = "0vw";
+    document.getElementsByClassName("content-slider")[0].style.height = "auto";
     document.getElementsByClassName("box1")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box2")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("work").style.color = 'black';
@@ -11,6 +10,11 @@ function clickWork() {
 
 function clickAbout() {
     document.getElementsByClassName("content-slider")[0].style.right = `90vw`;
+    // var x = window.matchMedia("(max-width: 700px)")
+    // myFunction(x) // Call listener function at run time
+    // x.addListener(myFunction) // Attach listener function on state changes
+
+    document.getElementsByClassName("content-slider")[0].style.height = `158vh`;
     document.getElementsByClassName("box1")[0].style.backgroundColor = '#F7F7F7';
     document.getElementsByClassName("box2")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box3")[0].style.backgroundColor = '#F7F7F7';
@@ -21,6 +25,7 @@ function clickAbout() {
 
 function clickConnect() {
     document.getElementsByClassName("content-slider")[0].style.right = `180vw`;
+    document.getElementsByClassName("content-slider")[0].style.height = `100vh`;
     document.getElementsByClassName("box3")[0].style.backgroundColor = 'white';
     document.getElementsByClassName("box2")[0].style.backgroundColor = '#F7F7F7';
     document.getElementById("about").style.color = 'lightgray';

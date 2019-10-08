@@ -34,7 +34,6 @@ margin-top:40px;
   font-size:35px;
   font-family:"Chivo",sans-serif;
   color: #262626;
-  margin-bottom: 20px;
 }
 
 .p-subtitle{
@@ -103,12 +102,12 @@ width:61%;
 
 .window{
 width:100%;
-height:100%;
+/* height:100%; */
 overflow:hidden;
 }
 
 .logo{
-padding-top:70px;
+padding-top:40px;
 margin-bottom: 0;
 text-align: center;
 }
@@ -179,15 +178,13 @@ font-family:"proxima-nova",sans-serif;
 font-weight:400;
 }
 
-
 .content-slider{
 position:relative;
 margin-top:-174px;
-display:flex;
-flex-direction:row;
-width:280vw;
+right: 0vw;
+width:280vw; 
+transition: all 1s ease;
 }
-
 
 .fixed{
 position:fixed;
@@ -195,7 +192,7 @@ position:fixed;
 
 .box1{
 background-color:white;
-width:90vw;
+width:90vw; 
 }
 
 /*workhome*/
@@ -277,9 +274,9 @@ justify-content:space-between;
 margin-top:1%;
 }
 
-@media only screen and (max-width:1460px){
+@media only screen and (max-width:1520px){
 .home-textbox{
-display:block;
+display: block;
 }
 }
 
@@ -308,8 +305,9 @@ margin-bottom:43px;
 } */
 
 .project-container{
-  margin-top:300px;
+  margin-top:150px;
   align-items:center;
+  width: 90%;
 }
 
 .headerbox {
@@ -624,8 +622,17 @@ margin-left: -38px;
   width: 145px;
   font-family:"Lato",sans-serif
 }
+
+.r-button {
+  color: 255,255,255,0.6;
+  border: 1px solid #262626;
+  padding: 5px 15px 5px 15px;
+  margin-top: 25px;
+  width: 145px;
+  font-family:"Lato",sans-serif
+}
   
-.w-button:hover, .m-button:hover, .s-button:hover {
+.w-button:hover, .m-button:hover, .s-button:hover, .r-button:hover  {
     background-color: #262626;
     color: white;
 }
@@ -666,10 +673,7 @@ width:100%
 justify-content:space-between;
 margin-top:15px;
 }
-
-
 /* workzoo end */
-
 
 
 /* worksquek */
@@ -688,330 +692,22 @@ width:90vw;
 
 .quotecontainer{
 padding-top:258px;
-padding-left:95px;
-width:40%;
-}
-
-@media only screen and (max-width:1200px){
-.quotecontainer{
-margin:auto;
-text-align:center;
-width:610px;
-padding-left:0;
-}
-}
-
-@media only screen and (max-width:992px){
-.quotecontainer{
-padding-top:240px;
-}
-}
-
-@media only screen and (max-width:768px){
-.quotecontainer{
-padding-top:230px;
-width:508px;
-}
-}
-
-@media only screen and (max-width:600px){
-.quotecontainer{
-width:85%;
-}
+justify-content: center;
+align-items: center;
+margin: 0 auto 8% auto;
 }
 
 .quote {
-  font-size: 25px;
-}
-
-
-.aboutcontainer{
-  /* display: none; */
-margin-top:122px;
-margin-right:95px;
-display:flex;
-justify-content:flex-end;
-
-}
-
-
-@media only screen and (max-width:1200px){
-.aboutcontainer{
-margin-right:0;
-margin-top:70px;
-justify-content:center;
-}
-}
-
-@media only screen and (max-width:992px){
-.aboutcontainer{
-margin-top:45px;
-}
-}
-
-@media only screen and (max-width:768px){
-.aboutcontainer{
-margin-top:60px;
-}
-}
-
-@media only screen and (max-width:500px){
-.aboutcontainer{
-margin-top:18px;
-}
-}
-
-#aboutbox{
-width:70%;
-height:auto;
-background-color:#FCE0D2;
-display:flex;
-flex-direction:row;
-}
-
-@media only screen and (max-width:1200px){
-#aboutbox{
-width:85%;
-}
-}
-
-@media only screen and (max-width:768px){
-#aboutbox{
-flex-direction:column;
-}
-}
-
-#profilebox{
-width:45%;
-margin:4%;
-margin-right:0%;
-}
-
-@media only screen and (max-width:960px){
-#profilebox{
-width:92%;
-margin:4%;
-}
-}
-
-@media only screen and (max-width:768px){
-#profilebox{
-width:82%;
-margin:9%;
-}
-}
-
-@media only screen and (max-width:500px){
-#profilebox{
-width:100%;
-margin:0;
-}
+  font-size: 30px;
+  line-height: 2;
+  width: 41%;
+  margin: 0 0 0 8%;
+  
 }
 
 .profile{
-width:100%;
+width: 30%;
 height:auto;
-}
-
-.content{
-display:flex;
-flex-direction:row;
-width:50%;
-margin:4%;
-}
-
-@media only screen and (max-width:960px){
-.content{
-width:93%;
-}
-}
-
-@media only screen and (max-width:768px){
-.content{
-width:82%;
-margin:08%8%8%;
-}
-}
-
-@media only screen and (max-width:500px){
-.content{
-width:82%;
-margin:8%;
-}
-}
-
-#paragraph{
-font-family:"Lato",sans-serif;
-font-size:13px;
-line-height:2.15;
-}
-
-@media only screen and (max-width:768px){
-#paragraph{
-margin-bottom:0;
-}
-}
-
-@media only screen and (max-width:500px){
-#paragraph{
-width:100%;
-text-align:center;
-}
-}
-
-.subtitle{
-height:27px;
-transform:rotate(90deg);
-margin-top:87px;
-margin-right:-80px;
-margin-left:-60px;
-}
-
-
-#about_me{
-font-family:"chivo",sans-serif;
-width:189px;
-font-size:20px;
-}
-
-@media only screen and (max-width:500px){
-#about_me{
-display:none;
-}
-}
-
-.funcontainer{
-margin-top:122px;
-display:flex;
-}
-
-@media only screen and (max-width:1200px){
-.funcontainer{
-justify-content:center;
-margin-top:90px;
-}
-}
-
-@media only screen and (max-width:992px){
-.funcontainer{
-margin-top:18px;
-}
-}
-
-@media only screen and (max-width:768px){
-.funcontainer{
-margin-top:0;
-}
-}
-
-.funbit{
-display:flex;
-flex-direction:row;
-width:70%;
-text-align:center;
-margin-left:95px;
-justify-content:space-between;
-}
-
-@media only screen and (max-width:1200px){
-.funbit{
-margin-left:0;
-width:85%;
-}
-}
-
-@media only screen and (max-width:992px){
-.funbit{
-flex-direction:column;
-}
-}
-
-.fun{
-display:flex;
-flex-direction:column;
-width:30%;
-}
-
-@media only screen and (max-width:992px){
-.fun{
-width:100%;
-flex-direction:row;
-margin-top:20px;
-justify-content:space-between;
-}
-}
-
-.funmedia{
-width:100%;
-}
-
-@media only screen and (max-width:992px){
-.funmedia{
-width:38%;
-}
-}
-
-@media only screen and (max-width:768px){
-.funmedia{
-display:none;
-}
-}
-
-.cardbox{
-margin-top:30px;
-}
-@media only screen and (max-width:992px){
-.cardbox{
-width:53%;
-text-align:start;
-margin-top:0;
-}
-}
-
-@media only screen and (max-width:768px){
-.cardbox{
-width:100%;
-background-color:#FCE0D2;
-padding:8%;
-}
-}
-
-@media only screen and (max-width:500px){
-.cardbox{
-text-align:center;
-}
-}
-
-.cardtitle{
-font-family:"Abel",sans-serif;
-font-size:15px;
-text-align:center;
-}
-
-@media only screen and (max-width:992px){
-.cardtitle{
-width:53%;
-text-align:start;
-}
-}
-
-@media only screen and (max-width:500px){
-.cardtitle{
-width:100%;
-text-align:center;
-}
-}
-
-.cardtext{
-font-family:"Lato",sans-serif;
-font-size:13px;
-line-height:2;
-}
-
-@media only screen and (max-width:768px){
-.cardtext{
-margin:0;
-}
 }
 
 .social{
@@ -1092,6 +788,8 @@ width:40px;
 .box3{
 background-color:white;
 width:90vw;
+/* height: 100vh;
+overflow: scroll; */
 }
 
 .pad{
